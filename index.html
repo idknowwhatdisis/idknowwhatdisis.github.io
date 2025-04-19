@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/pixil-frame-0.png">
+
+  <link rel="stylesheet" href="index.css">
+  <title>A surprise</title>
+</head>
+<body>
+  <div class="text">
+    <h1 style="margin: 0; margin-top: 30px; ">HEY RALPH!</h1>
+    <br>
+    <h2 style="margin: 0; ">I've made something for you &#128140;</h2>
+    <br>
+    <h3 style="margin: 0; ">Wanna see it?~</h3>
+
+    <br>
+    <button class="click-button" onclick="goToPage1()">
+      CLICK ME!
+    </button>
+  </div>
+
+  <script>
+    function goToPage1(){
+      window.location.href = "page1.html";
+      document.body.classList.add('fade-out');
+
+      setTimeout(() => {
+        window.location.href = "page1.html";
+      }, 500);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+  margin: 0;
+  background-image: url(images/background.png);
+  color: rgb(202, 146, 255);
+  font-family: "Pixelify Sans", sans-serif;  
+}
+
+.start-page {
+  color: rgb(251, 255, 178);
+  max-width: 700px;
+  width: 80%;
+  height: 100%;
+  margin: 5vh auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  padding-top: 60px;
+  font-size: 60px;
+}
+
+.sub-title {
+  margin: 0;
+  padding-top: 20px;
+  font-size: large;
+}
+
+#cake-container {
+
+  height: 300px;
+  max-width: 250px;
+  border-radius: 30px;
+
+}
+
+.cake-pic {
+  display: block;
+  margin: 0;
+  margin-top: 40px;
+  max-width: 240px;
+}
+
+.click-button {
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: rgba(139, 0, 139, 0);
+}
+
+.click-button:active{
+  transform: translateY(4px);
+  cursor: pointer;
+  border: none;
+  background-color: rgba(139, 0, 139, 0);
+}
+
+.btn-click {
+  height: 45px;
+  outline: none;
+}
+
+#message {
+  margin: 0;
+  max-width: 580px;
+  padding: 20px 0;
+  font-size: 17px;
+  font-family: 'Andale Mono', monospace;
+  line-height: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .title {
+    font-size: 30px;
+  }
+
+  .sub-title {
+    font-size: 13px;
+  }
+
+  #cake-container {
+    height: 200px;
+    max-width: 150px;
+  }
+
+  .cake-pic {
+    max-width: 150px;
+  }
+
+  #message {
+    font-size: 10px;
+    line-height: 20px;
+  }
+  
+}

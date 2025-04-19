@@ -1,0 +1,85 @@
+
+body {
+  transition: opacity 1s ease;
+  background-color: rgb(200, 160, 237);
+  margin: 0;
+  padding: 0;
+}
+
+.text {
+  max-width: 800px;
+  width: 90%;
+  height: 100%;
+  margin: 20vh auto;
+  color: rgb(109, 32, 182);
+  font-family: 'Andale Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+
+}
+
+.click-button {
+  background-color: rgb(203, 218, 255);
+  color: rgb(58, 58, 142);
+  margin: 0;
+  margin-top: 40px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+.click-button:active{
+  transform: translateY(4px);
+  cursor: pointer;
+  border: none;
+  background-color: rgba(139, 0, 139, 0);
+}
+
+.click-button:hover {
+  background-color: rgb(135, 71, 195);
+  color: white;
+  cursor: pointer;
+}
+.click-button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h1, h2, h3 {
+    width: 250px;
+
+  }
+
+  
+
+  .text {
+    margin: 20vh auto;
+  }
+}

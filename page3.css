@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Englebert&display=swap');
+
+
+body {
+  background-image: url(images/background.png);
+  color: white;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  margin: 0;
+}
+
+#video {
+  height: 400px;
+  max-width: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+.letter-container {
+display: flex;
+  justify-content: center;
+  align-items: top;
+  margin-top: 20px;
+  width: 800px;
+}
+
+.letter {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  padding: 20px;
+  color: rgb(223, 189, 255);
+  font-family: "Englebert", cursive;
+  line-height: 30px;
+}
+
+.mini-gallery {
+  width: 60%;
+  height: 70%;
+  padding:10px;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  font-family: 'Pixelify Sans', cursive;
+font-size: 40px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+margin-top: 50px;
+margin-bottom: 40px ;
+}
+
+.gallery {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  height: 100%;
+}
+
+.gallery img {
+  max-width: 95%;
+  height: 95%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:active {
+  transform: scale(1.5);
+z-index: 5;
+}
+
+@media screen and (max-width: 800px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  #video {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+  }
+
+ .letter-container {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+ .letter {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 10px;
+  }
+
+  .mini-gallery {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    font-size: 24px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+
+    .gallery img {
+    width: 100%;
+    height: 250px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+}
